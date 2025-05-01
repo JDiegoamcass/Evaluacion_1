@@ -72,6 +72,40 @@
                 </div>
             </div>
         </section>
+
+        <section id="registro" class="page" style="display: none;">
+            <h2>Inscríbete a Nuestras Conferencias</h2>
+            <form id="signupForm" onsubmit="validateForm(event)">
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo *</label>
+                    <input type="text" id="fullName" oninput="validateField(this)">
+                    <span class="error-message" id="fullNameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Correo Electrónico *</label>
+                    <input type="email" id="emailAddress" oninput="validateField(this)">
+                    <span class="error-message" id="emailAddressError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="program">Programa Académico *</label>
+                    <select id="program" oninput="validateField(this)">
+                        <option value="">Selecciona un programa</option>
+                        <option value="ingenieria">Ingeniería en Sistemas </option>
+                        <option value="administracion">Ingeniería Industrial</option>
+                        <option value="diseno">Marketing</option>
+                   </select>
+                    <span class="error-message" id="programError"></span>
+                </div>
+                <div class="form-group">
+                    <label>Selecciona las Conferencias (mínimo 2) *</label>
+                    <label><input type="checkbox" name="event" value="github" onchange="validateField(this)"> GitHub para Colaboración</label>
+                    <label><input type="checkbox" name="event" value="docker" onchange="validateField(this)"> Primeros Pasos con Docker</label>
+                    <label><input type="checkbox" name="event" value="linux" onchange="validateField(this)"> Fundamentos de Linux</label>
+                    <span class="error-message" id="eventError"></span>
+                </div>
+                <button type="submit">Inscribirse</button>
+            </form>
+        </section>
     </main>
 
     <footer>

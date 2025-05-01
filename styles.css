@@ -64,13 +64,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.grid-container {
+.grid-container, .event-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
 }
 
-.grid-item {
+.grid-item, .event-card {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
@@ -78,13 +78,21 @@ h2 {
     transition: transform 0.3s;
 }
 
-.grid-item:hover {
+.grid-item:hover, .event-card:hover {
     transform: scale(1.03);
 }
 
-.grid-item h3 {
+.grid-item h3, .event-card h3 {
     color: #feb47b;
     margin-bottom: 0.5rem;
+}
+
+.event-logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1rem;
+    object-fit: contain;
 }
 
 .slider {

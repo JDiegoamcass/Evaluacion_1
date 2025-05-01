@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAM - Nueva Experiencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="Img/logo-uam-2.png" alt="UAM Logo">
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#eventos" class="nav-link">Eventos</a>
+        <a href="#registro" class="nav-link">Registro</a>
+    </nav>
+
+    <main>
+        <section id="inicio" class="page">
+            <h2>Bienvenidos a UAM</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Nuestra Misión</h3>
+                    <p>Formar líderes con visión global, emprendedores, con sólidos conocimientos científicos y principios humanísticos, capaces de aprender permanentemente para hacer frente a los desafíos de la sociedad contemporánea.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Nuestra Visión</h3>
+                    <p>Consolidarse como institución académica de clase internacional comprometida con el desarrollo humano equitativo y sostenible, con la eficiencia y competitividad de una organización privada de alto rendimiento.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>Sobre Nosotros</h3>
+                    <p>La Universidad Americana, UAM, fue fundada en 1992 por un grupo de catedráticos universitarios con vasta experiencia en el campo docente, investigativo y administrativo, con el propósito de contribuir al desarrollo de la Educación Superior en Nicaragua.</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <img src="Img/3-1536x1024.webp" alt="Estudiantes UAM">
+                    <img src="Img/6-2-1536x1024.jpg" alt="Conferencia UAM">
+                    <img src="Img/Simposio-Promoviendo-la-Prevencion-3-1536x1024.jpg" alt="Simposio UAM">
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">←</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">→</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universidad Americana © 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
